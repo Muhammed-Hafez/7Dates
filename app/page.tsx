@@ -1,9 +1,10 @@
-import Image from 'next/image'
+import Hero from "@/components/Hero/Hero";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Seven Dates</h1>
+    <main className="w-full mx-auto">
+      <Hero />
     </main>
-  )
+  );
 }
