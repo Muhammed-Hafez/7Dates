@@ -34,7 +34,7 @@ function HeroCarousel() {
       }}
     >
       {sliderImages.map((slide) => (
-        <SplideSlide key={slide._id}>
+        <SplideSlide key={slide.id}>
           <div className="w-full h-[800px] relative overflow-hidden mb-10">
             <img
               src={slide.image}
