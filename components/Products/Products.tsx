@@ -53,21 +53,23 @@ const productList = [
 
 const Products = () => {
   return (
-    <section className="w-full max-w-[1600px] mx-auto py-8 flex flex-col items-center justify-center">
-      <div className={styles.products__heading}>
-        <p className={styles.products__subtitle}>Our Products</p>
-        <h1 className={styles.products__title}>Best Quality Products</h1>
-      </div>
+    <section className=" bg-[#f3f7ed] my-8 overflow-hidden">
+      <div className="w-full max-w-[1400px] mx-auto py-5 flex flex-col items-center justify-center">
+        <div className={styles.products__heading}>
+          <p className={styles.products__subtitle}>Our Products</p>
+          <h1 className={styles.products__title}>Best Quality Products</h1>
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {productList.map((product) => (
-          <ProductCard
-            key={product._id}
-            img={product.img}
-            title={product.title}
-            desc={product.desc}
-          />
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {productList.map((product) => (
+            <ProductCard
+              key={product._id}
+              img={product.img}
+              title={product.title}
+              desc={product.desc}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

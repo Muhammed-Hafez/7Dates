@@ -5,6 +5,8 @@ import React from "react";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
+import styles from "./Hero.module.scss";
+
 const sliderImages = [
   {
     id: 1,
@@ -22,29 +24,31 @@ const sliderImages = [
 
 function HeroCarousel() {
   return (
-    <Splide
-      options={{
-        arrows: false,
-        rewind: true,
-        type: "loop",
-        autoplay: true,
-        pauseOnHover: true,
-        pauseOnFocus: true,
-        pagination: false,
-      }}
-    >
-      {sliderImages.map((slide) => (
-        <SplideSlide key={slide.id}>
-          <div className="w-full h-[800px] relative overflow-hidden mb-10">
-            <img
-              src={slide.image}
-              alt="slider image"
-              className="w-[100%] h-[100%] object-cover object-center"
-            />
-          </div>
-        </SplideSlide>
-      ))}
-    </Splide>
+    <section className="w-full h-[800px] mx-auto relative overflow-hidden">
+      <Splide
+        options={{
+          arrows: false,
+          rewind: true,
+          type: "loop",
+          autoplay: true,
+          pauseOnHover: true,
+          pauseOnFocus: true,
+          pagination: false,
+        }}
+      >
+        {sliderImages.map((slide) => (
+          <SplideSlide key={slide.id}>
+            <div className={styles.img__container}>
+              <img
+                src={slide.image}
+                alt="slider image"
+                className="w-[100%] h-[100%] object-cover object-bottom"
+              />
+            </div>
+          </SplideSlide>
+        ))}
+      </Splide>
+    </section>
   );
 }
 

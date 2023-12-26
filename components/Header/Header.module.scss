@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .header__logo {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
+
+    .header__navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      .header__link {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #4b5563;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: #88b44e;
+        }
+      }
+    }
+  }
+}

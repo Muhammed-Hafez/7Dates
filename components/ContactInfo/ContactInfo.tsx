@@ -1,22 +1,32 @@
-import React from "react";
+import { FaPhone } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import { FaLocationDot } from "react-icons/fa6";
+
+import styles from "./ContactInfo.module.scss";
 
 const ContactInfo = () => {
   return (
-    <div>
-      <section className="w-full bg-green-100 max-w-[1600px] px-8 py-20 mx-auto flex flex-col items-center justify-start text-center">
-        <h2 className="text-3xl font-bold mb-5">Contact Us</h2>
-        <p className="md:w-[45%] w-full text-lg mb-12">
-          We are always happy to hear from you. Please feel free to contact us
-          for any queries or feedback.
-        </p>
+    <section className={styles.contact}>
+      <div className={styles.contact__container}>
+        <p className={styles.contact__subtitle}>Contact Us</p>
+        <h2 className={styles.contact__title}>Get in touch with us.</h2>
 
-        <ul className="flex md:flex-row items-center justify-around w-full mb-5">
-          <li>Phone: +91 1234567890</li>
-          <li>Email: ali@example.com </li>
-          <li>Location: 123 Street, New York, USA</li>
+        <ul className={styles.contact__list}>
+          <li>
+            <FaLocationDot className={styles.contact__icon} />
+            Umm Al Quwain <br /> United Arab Emirates
+          </li>
+          <li>
+            <FaPhone className={styles.contact__icon} />
+            +91 1234567890
+          </li>
+          <li>
+            <IoMdMail className={styles.contact__icon} />
+            info@sevendatesfactory.com
+          </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
