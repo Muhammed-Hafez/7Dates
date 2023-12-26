@@ -1,16 +1,51 @@
-import Image from "next/image";
+"use client";
+
+import "@splidejs/react-splide/css/core";
 import React from "react";
 
-export default function Hero() {
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+
+const sliderImages = [
+  {
+    id: 1,
+    image: "/images/slider-images/slide-1.jpg",
+  },
+  {
+    id: 2,
+    image: "/images/slider-images/slide-2.jpg",
+  },
+  {
+    id: 3,
+    image: "/images/slider-images/slide-3.jpg",
+  },
+];
+
+function HeroCarousel() {
   return (
-    <section className="h-[600px] overflow-hidden">
-      <Image
-        src="/images/banner-1.jpg"
-        alt="Hero"
-        width={1920}
-        height={100}
-        className="object-cover object-center w-full h-full"
-      />
-    </section>
+    <Splide
+      options={{
+        arrows: false,
+        rewind: true,
+        type: "loop",
+        autoplay: true,
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        pagination: false,
+      }}
+    >
+      {sliderImages.map((slide) => (
+        <SplideSlide key={slide._id}>
+          <div className="w-full h-[800px] relative overflow-hidden mb-10">
+            <img
+              src={slide.image}
+              alt="slider image"
+              className="w-[100%] h-[100%] object-cover object-center"
+            />
+          </div>
+        </SplideSlide>
+      ))}
+    </Splide>
   );
 }
+
+export default HeroCarousel;
