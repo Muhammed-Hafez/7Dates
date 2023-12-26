@@ -2,7 +2,13 @@ import React from "react";
 
 import styles from "./ProductCard.module.scss";
 
-export default function ProductCard({ img, title, desc }) {
+interface ProductCardProps {
+  img: string;
+  title: string;
+  desc: string;
+}
+
+export default function ProductCard({ img, title, desc }: ProductCardProps) {
   return (
     <div className={styles.product__card__container}>
       <div className={styles.product__card}>
