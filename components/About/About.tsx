@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./About.module.scss";
+import Button from "../Button/Button";
 
 const About = () => {
   return (
@@ -28,15 +29,13 @@ const About = () => {
             The success history of <br /> 7Dates in 18 years
           </h1>
           <p className={styles.about__desc}>
-            With a legacy spanning over 18 years, Seven Dates Factory Packing
-            and Processing Dates LLC has been a pioneer in sourcing and packing
-            the finest date products.
+            We have more than 18 years of experience in sourcing and packing the
+            finest dates products. <br />
+            Seven Dates principal goal is to provide the highest quality dates
+            products to UAE nationals, residents, the Gulf Countries and whole
+            world.
           </p>
-          <p className={styles.about__desc}>
-            Our journey is rooted in a dedication to quality, customer
-            satisfaction, and a passion for delivering the best of the UAE's
-            date varieties.
-          </p>
+          <Button title="Read More" url="/about" />
         </div>
       </div>
     </section>
