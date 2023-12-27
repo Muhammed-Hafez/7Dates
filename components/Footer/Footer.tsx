@@ -20,17 +20,17 @@ export default function Footer() {
           <ul className="flex items-center justify-center gap-3">
             <li>
               <Link href="/">
-                <FaFacebook size={25} color={"#88b44e"} />
+                <FaFacebook size={25} color={"#e0b07f"} />
               </Link>
             </li>
             <li>
               <Link href="/">
-                <FaInstagram size={25} color={"#88b44e"} />
+                <FaInstagram size={25} color={"#e0b07f"} />
               </Link>
             </li>
             <li>
               <Link href="/">
-                <BsTwitterX size={25} color={"#88b44e"} />
+                <BsTwitterX size={25} color={"#e0b07f"} />
               </Link>
             </li>
           </ul>
