@@ -1,6 +1,8 @@
+"use client";
+
+import { use, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 import styles from "./Header.module.scss";
 
 const navLinks = [
@@ -11,15 +13,31 @@ const navLinks = [
 ];
 
 export default function Header() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${scrollY > 150 ? styles.scrolled : ""}`}
+    >
       <div className={styles.header__container}>
         <Link href="/" className={styles.header__logo}>
           <Image
             src="/images/logo.png"
             alt="Seven Dates"
-            width={180}
-            height={180}
+            width={120}
+            height={120}
           />
         </Link>
 
