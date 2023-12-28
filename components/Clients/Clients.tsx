@@ -31,6 +31,11 @@ const clients = [
     name: "Client 6",
     img: "/images/clients/6.png",
   },
+  {
+    id: 7,
+    name: "Client 7",
+    img: "/images/clients/7.png",
+  },
 ];
 
 export default function Clients() {

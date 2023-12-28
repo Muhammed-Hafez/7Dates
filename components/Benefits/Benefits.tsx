@@ -6,9 +6,9 @@ import Button from "../Button/Button";
 
 const Benefits = () => {
   return (
-    <section className={`${styles.benefits} px-4 md:px-10 py-10 md:py-20`}>
+    <section className={`${styles.benefits} py-10 md:py-20 my-8`}>
       <div
-        className={`${styles.benefits__container} w-full max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-center gap-12`}
+        className={`${styles.benefits__container} p-10 max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-center gap-12`}
       >
         <div className={`${styles.benefits__content}`}>
           <h2 className={styles.benefits__title}>

@@ -39,14 +39,14 @@ const productList = [
 
 const Products = () => {
   return (
-    <section className=" bg-[#e0af7f25] my-8 overflow-hidden">
-      <div className="w-full max-w-[1400px] mx-auto py-5 flex flex-col items-center justify-center">
+    <section className={styles.products}>
+      <div className={styles.products__container}>
         <div className={styles.products__heading}>
           <p className={styles.products__subtitle}>Our Products</p>
           <h1 className={styles.products__title}>Best Quality Products</h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className={styles.products__list}>
           {productList.map((product) => (
             <ProductCard
               key={product._id}
