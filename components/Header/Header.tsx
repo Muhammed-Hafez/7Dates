@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <header
-      className={`${styles.header} ${scrollY > 150 ? styles.scrolled : ""}`}
+      className={`${styles.header} ${scrollY > 200 ? styles.scrolled : ""}`}
     >
       <div className={styles.header__container}>
         <Link href="/" className={styles.header__logo}>

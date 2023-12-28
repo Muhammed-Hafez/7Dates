@@ -4,43 +4,38 @@ const clients = [
   {
     id: 1,
     name: "Client 1",
-    img: "/images/clients/client-1.webp",
+    img: "/images/clients/1.png",
   },
   {
     id: 2,
     name: "Client 2",
-    img: "/images/clients/client-2.png",
+    img: "/images/clients/2.png",
   },
   {
     id: 3,
     name: "Client 3",
-    img: "/images/clients/client-3.png",
+    img: "/images/clients/3.png",
   },
   {
     id: 4,
     name: "Client 4",
-    img: "/images/clients/client-4.jpeg",
+    img: "/images/clients/4.png",
   },
   {
     id: 5,
     name: "Client 5",
-    img: "/images/clients/client-5.jpg",
+    img: "/images/clients/5.png",
   },
   {
     id: 6,
     name: "Client 6",
-    img: "/images/clients/client-6.png",
-  },
-  {
-    id: 7,
-    name: "Client 7",
-    img: "/images/clients/client-7.jpg",
+    img: "/images/clients/6.png",
   },
 ];
 
 export default function Clients() {
   return (
-    <section className="w-full bg-[#377760]">
+    <section className="w-full">
       <div className={styles.clients__container}>
         <h2 className={styles.clients__title}>Our Clients</h2>
 
