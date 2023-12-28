@@ -11,19 +11,19 @@ const sliderImages = [
     id: 1,
     image: "/images/slider-images/slide-1.jpg",
     quote:
-      "“Savor the sweetness of life with 7Dates – where every bite is a journey into the heart of tradition.”",
+      "“Savor the sweetness of life with 7Dates where every bite is a journey into the heart of tradition.”",
   },
   {
     id: 2,
     image: "/images/slider-images/slide-2.jpg",
     quote:
-      "“Empower your brand with the richness of 7Dates - where tradition meets innovation, and quality becomes an enduring partnership.”",
+      "“Empower your brand with the richness of 7Dates where tradition meets innovation, and quality becomes an enduring partnership.”",
   },
   {
     id: 3,
     image: "/images/slider-images/slide-3.jpg",
     quote:
-      "“Journey through the oasis of flavor – 7 Dates, where the authenticity of tradition meets the innovation of excellence.”",
+      "“Journey through the oasis of flavor 7Dates, where the authenticity of tradition meets the innovation of excellence.”",
   },
 ];
 
