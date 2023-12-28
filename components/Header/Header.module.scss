@@ -1,6 +1,10 @@
 .header {
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: transparent;
 
   .header__container {
     display: flex;
@@ -24,11 +28,11 @@
       .header__link {
         font-size: 1.2rem;
         font-weight: 600;
-        color: #4b5563;
+        color: #fff;
         transition: color 0.2s ease;
 
         &:hover {
-          color: #e0b07f;
+          color: #37775f;
         }
       }
     }
