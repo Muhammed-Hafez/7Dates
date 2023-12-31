@@ -29,15 +29,16 @@ export default function Header() {
 
   return (
     <header
-      className={`${styles.header} ${scrollY > 200 ? styles.scrolled : ""}`}
+      className={`${styles.header} ${scrollY > 250 ? styles.scrolled : ""}`}
     >
       <div className={styles.header__container}>
         <Link href="/" className={styles.header__logo}>
           <Image
             src="/images/logo.png"
             alt="Seven Dates"
-            width={120}
-            height={120}
+            width={220}
+            height={220}
+            className={styles.header__logo__img}
           />
         </Link>
 
