@@ -25,6 +25,24 @@ const sliderImages = [
     quote:
       "“Journey through the oasis of flavor 7Dates, where the authenticity of tradition meets the innovation of excellence.”",
   },
+  {
+    id: 4,
+    image: "/images/slider-images/004.jpg",
+    quote:
+      "“Journey through the oasis of flavor 7Dates, where the authenticity of tradition meets the innovation of excellence.”",
+  },
+  {
+    id: 5,
+    image: "/images/slider-images/005.jpg",
+    quote:
+      "“Journey through the oasis of flavor 7Dates, where the authenticity of tradition meets the innovation of excellence.”",
+  },
+  {
+    id: 6,
+    image: "/images/slider-images/006.jpg",
+    quote:
+      "“Journey through the oasis of flavor 7Dates, where the authenticity of tradition meets the innovation of excellence.”",
+  },
 ];
 
 function Hero() {
