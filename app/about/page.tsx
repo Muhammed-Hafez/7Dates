@@ -25,7 +25,7 @@ const AboutPage = () => {
         </div>
 
         <div className={styles.story__img}>
-          <img src="/images/products/Saudi.jpg" alt="About" />
+          <img src="/images/products/Saudi.png" alt="About" />
         </div>
       </section>
 
@@ -40,7 +40,7 @@ const AboutPage = () => {
         </div>
 
         <div className={styles.vision__img}>
-          <img src="/images/products/Safawy.jpg" alt="About" />
+          <img src="/images/products/Safawy.png" alt="About" />
         </div>
       </section>
 
@@ -56,7 +56,7 @@ const AboutPage = () => {
         </div>
 
         <div className={styles.mission__img}>
-          <img src="/images/products/Ajwa.jpg" alt="About" />
+          <img src="/images/products/Ajwa.png" alt="About" />
         </div>
       </section>
 

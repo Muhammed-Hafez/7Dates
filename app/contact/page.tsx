@@ -7,7 +7,6 @@ const ContactPage = () => {
       <div className={styles.contact__container}>
         <div className={styles.contact__heading}>
           <h1 className={styles.contact__title}>Contact</h1>
-          {/* <p className={styles.contact__subtitle}>Get in touch</p> */}
         </div>
 
         <div className={styles.contact__form}>

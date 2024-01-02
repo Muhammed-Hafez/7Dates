@@ -1,4 +1,4 @@
-.about {
+.private {
   width: 100%;
   background-image: url(/images/slider-images/001.jpg);
   background-size: cover;
@@ -8,9 +8,10 @@
   margin-bottom: 3rem;
 }
 
-.about__content {
+.private__content {
   max-width: 1400px;
   margin: 0 auto;
+  height: 500px;
 
   h1 {
     font-size: 3rem;
@@ -27,7 +28,7 @@
   }
 }
 
-.about__story {
+.private__story {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -68,7 +69,7 @@
   }
 }
 
-.about__vision {
+.private__vision {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -110,7 +111,7 @@
   }
 }
 
-.about__mission {
+.private__mission {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
