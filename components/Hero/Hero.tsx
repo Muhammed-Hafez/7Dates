@@ -54,9 +54,7 @@ function Hero() {
           rewind: true,
           type: "loop",
           autoplay: true,
-          pauseOnHover: true,
-          pauseOnFocus: true,
-          pagination: false,
+          pagination: true,
         }}
       >
         {sliderImages.map((slide) => (

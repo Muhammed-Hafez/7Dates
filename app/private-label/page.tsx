@@ -13,7 +13,8 @@ const PrivateLabelPage = () => {
         <p>The success history of 7 Dates in 18 years</p>
       </section>
 
-      <ContactInfo />
+      <Clients />
+      {/* <ContactInfo /> */}
     </>
   );
 };
