@@ -3,6 +3,7 @@
 import "@splidejs/react-splide/css/core";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 import styles from "./Hero.module.scss";
 
@@ -69,6 +70,15 @@ function Hero() {
           </SplideSlide>
         ))}
       </Splide>
+
+      <div className="splide__arrows">
+        <button className="splide__arrow splide__arrow--prev">
+          <FaArrowRightLong />
+        </button>
+        <button className="splide__arrow splide__arrow--next">
+          <FaArrowRightLong />
+        </button>
+      </div>
     </section>
   );
 }
