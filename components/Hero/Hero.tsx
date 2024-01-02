@@ -51,11 +51,18 @@ function Hero() {
     <section>
       <Splide
         options={{
-          arrows: false,
-          rewind: true,
           type: "loop",
           autoplay: true,
           pagination: true,
+          arrows: true,
+          prevArrow: (arrow) => {
+            arrow.classList.add("splide__arrow", "splide__arrow--prev");
+            return <FaArrowLeftLong />;
+          },
+          nextArrow: (arrow) => {
+            arrow.classList.add("splide__arrow", "splide__arrow--next");
+            return <FaArrowRightLong />;
+          },
         }}
       >
         {sliderImages.map((slide) => (
@@ -69,16 +76,16 @@ function Hero() {
             </div>
           </SplideSlide>
         ))}
-      </Splide>
 
-      <div className="splide__arrows">
-        <button className="splide__arrow splide__arrow--prev">
-          <FaArrowRightLong />
-        </button>
-        <button className="splide__arrow splide__arrow--next">
-          <FaArrowRightLong />
-        </button>
-      </div>
+        {/* <div className="splide__arrows">
+          <button className="splide__arrow splide__arrow--prev">
+            <FaArrowRightLong />
+          </button>
+          <button className="splide__arrow splide__arrow--next">
+            <FaArrowRightLong />
+          </button>
+        </div> */}
+      </Splide>
     </section>
   );
 }
