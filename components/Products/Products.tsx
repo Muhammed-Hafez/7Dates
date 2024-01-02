@@ -11,28 +11,28 @@ const productList = [
     _id: 1,
     title: "SAUDI",
     desc: "Majdoul is a soft, moist date with a sweet, delicate flavor. It is a popular date variety in Saudi Arabia and the United Arab Emirates.",
-    img: "/images/products/Saudi.jpg",
+    img: "/images/products/Saudi.png",
     price: 10,
   },
   {
     _id: 2,
     title: "SAGEY",
     desc: "Ajwa is a soft, moist date with a sweet, delicate flavor. It is a popular date variety in Saudi Arabia and the United Arab Emirates.",
-    img: "/images/products/Sagey.jpg",
+    img: "/images/products/Sagey.png",
     price: 10,
   },
   {
     _id: 3,
     title: "SAFAWY",
     desc: "Sukkary is a soft, moist date with a sweet, delicate flavor. It is a popular date variety in Saudi Arabia and the United Arab Emirates.",
-    img: "/images/products/Safawy.jpg",
+    img: "/images/products/Safawy.png",
     price: 10,
   },
   {
     _id: 4,
     title: "AJWA",
     desc: "Safawi is a soft, moist date with a sweet, delicate flavor. It is a popular date variety in Saudi Arabia and the United Arab Emirates.",
-    img: "/images/products/Ajwa.jpg",
+    img: "/images/products/Ajwa.png",
     price: 10,
   },
 ];
@@ -52,7 +52,6 @@ const Products = () => {
               key={product._id}
               img={product.img}
               title={product.title}
-              desc={product.desc}
             />
           ))}
         </div>

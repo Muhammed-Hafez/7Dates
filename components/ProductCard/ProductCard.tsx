@@ -5,10 +5,9 @@ import styles from "./ProductCard.module.scss";
 interface ProductCardProps {
   img: string;
   title: string;
-  desc: string;
 }
 
-export default function ProductCard({ img, title, desc }: ProductCardProps) {
+export default function ProductCard({ img, title }: ProductCardProps) {
   return (
     <div className={styles.product__card__container}>
       <div className={styles.product__card}>
@@ -22,7 +21,6 @@ export default function ProductCard({ img, title, desc }: ProductCardProps) {
 
         <div className={styles.product__details}>
           <h3 className={styles.product__name}>{title}</h3>
-          <p className={styles.product__desc}>{desc}</p>
         </div>
       </div>
     </div>

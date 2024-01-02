@@ -1,7 +1,36 @@
-import React from "react";
+import Button from "@/components/Button/Button";
+import styles from "../../styles/ContactPage.module.scss";
 
 const ContactPage = () => {
-  return <div>Contact Page</div>;
+  return (
+    <section className={styles.contact}>
+      <div className={styles.contact__container}>
+        <div className={styles.contact__heading}>
+          <h1 className={styles.contact__title}>Contact</h1>
+          {/* <p className={styles.contact__subtitle}>Get in touch</p> */}
+        </div>
+
+        <div className={styles.contact__form}>
+          <form>
+            <input type="text" name="name" id="name" placeholder="Your name" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+            />
+
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your message"
+            ></textarea>
+            <Button title="Send" url="#" />
+          </form>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default ContactPage;
