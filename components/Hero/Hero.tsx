@@ -55,11 +55,11 @@ function Hero() {
           autoplay: true,
           pagination: true,
           arrows: true,
-          prevArrow: (arrow) => {
+          prevArrow: (arrow: HTMLElement) => {
             arrow.classList.add("splide__arrow", "splide__arrow--prev");
             return <FaArrowLeftLong />;
           },
-          nextArrow: (arrow) => {
+          nextArrow: (arrow: HTMLElement) => {
             arrow.classList.add("splide__arrow", "splide__arrow--next");
             return <FaArrowRightLong />;
           },
@@ -76,15 +76,6 @@ function Hero() {
             </div>
           </SplideSlide>
         ))}
-
-        {/* <div className="splide__arrows">
-          <button className="splide__arrow splide__arrow--prev">
-            <FaArrowRightLong />
-          </button>
-          <button className="splide__arrow splide__arrow--next">
-            <FaArrowRightLong />
-          </button>
-        </div> */}
       </Splide>
     </section>
   );
