@@ -35,10 +35,10 @@ export default function Header() {
       <div className={styles.header__container}>
         <Link href="/" className={styles.header__logo}>
           <Image
-            src="/images/logo-v2.png"
+            src="/images/logo-v3.png"
             alt="Seven Dates"
-            width={220}
-            height={220}
+            width={250}
+            height={250}
             className={styles.header__logo__img}
           />
         </Link>

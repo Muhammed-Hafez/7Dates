@@ -1,6 +1,6 @@
 .products {
   width: 100%;
-  background-color: #e0af7f3e;
+  background-color: #377760;
   max-width: 1400px;
   margin: 0 auto;
 
@@ -15,7 +15,7 @@
       margin-bottom: 3rem;
 
       .products__subtitle {
-        color: #e0b07f;
+        color: #fff;
         font-style: italic;
         font-weight: 500;
         font-size: 1.3rem;
@@ -25,6 +25,7 @@
         font-family: "Playfair Display", serif;
         font-size: 3rem;
         font-weight: 700;
+        color: #fff;
       }
     }
 
