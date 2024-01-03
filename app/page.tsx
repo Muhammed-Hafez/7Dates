@@ -3,8 +3,8 @@ import Benefits from "@/components/Benefits/Benefits";
 import Clients from "@/components/Clients/Clients";
 import ContactInfo from "@/components/ContactInfo/ContactInfo";
 import Hero from "@/components/Hero/Hero";
+import PrivateLabel from "@/components/PrivateLabel/PrivateLabel";
 import Products from "@/components/Products/Products";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
       <Hero />
       <About />
       <Products />
+      <PrivateLabel />
       <Benefits />
       <Clients />
       <ContactInfo />
