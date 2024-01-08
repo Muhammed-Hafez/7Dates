@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-navigation/native": "^6.1.9",
     "@splidejs/react-splide": "^0.7.12",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "next": "14.0.4",

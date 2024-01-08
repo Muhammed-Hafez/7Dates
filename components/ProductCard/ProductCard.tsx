@@ -1,15 +1,17 @@
 import React from "react";
 
 import styles from "./ProductCard.module.scss";
+import Link from "next/link";
 
 interface ProductCardProps {
   img: string;
   title: string;
+  url: string;
 }
 
-export default function ProductCard({ img, title }: ProductCardProps) {
+export default function ProductCard({ img, title, url }: ProductCardProps) {
   return (
-    <div className={styles.product__card__container}>
+    <Link className={styles.product__card__container} href={`/products/${url}`}>
       <div className={styles.product__card}>
         <div className={styles.product__img}>
           <img
@@ -23,6 +25,6 @@ export default function ProductCard({ img, title }: ProductCardProps) {
           <h3 className={styles.product__name}>{title}</h3>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
