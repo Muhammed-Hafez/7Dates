@@ -9,9 +9,9 @@ import styles from "./Products.module.scss";
 const productList = [
   {
     _id: 1,
-    title: "SAUDI",
+    title: "AJWA",
     desc: "Majdoul is a soft, moist date with a sweet, delicate flavor. It is a popular date variety in Saudi Arabia and the United Arab Emirates.",
-    img: "/images/products/Saudi.png",
+    img: "/images/products/Ajwa.png",
     url: "1",
   },
   {
@@ -30,9 +30,9 @@ const productList = [
   },
   {
     _id: 4,
-    title: "AJWA",
-    desc: "Safawi is a soft, moist date with a sweet, delicate flavor. It is a popular date variety in Saudi Arabia and the United Arab Emirates.",
-    img: "/images/products/Ajwa.png",
+    title: "SAUDI",
+    desc: "Saudi is a soft, moist date with a sweet, delicate flavor. It is a popular date variety in Saudi Arabia and the United Arab Emirates.",
+    img: "/images/products/Saudi.png",
     url: "4",
   },
 ];
