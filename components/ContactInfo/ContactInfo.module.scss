@@ -12,18 +12,17 @@
     text-align: center;
 
     .contact__subtitle {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: 400;
-      color: #e0b07f;
+      color: var(--main-color);
       margin-bottom: 1rem;
       font-style: italic;
     }
 
     .contact__title {
-      width: 65%;
-      font-size: 2.2rem;
+      font-size: 3rem;
       font-weight: 700;
-      font-family: "Playfair Display", serif;
+      font-family: "Myriad Pro", sans-serif;
       margin-bottom: 3rem;
     }
 
@@ -42,8 +41,8 @@
         row-gap: 1rem;
 
         .contact__icon {
-          background-color: #e0b07f;
-          color: #fff;
+          background-color: var(--main-color);
+          color: var(--light-color);
           padding: 1rem;
           border-radius: 50%;
           font-size: 2rem;

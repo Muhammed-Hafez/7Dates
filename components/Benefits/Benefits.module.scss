@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: right center;
   overflow: hidden;
-  padding-block: 5rem;
+  margin-block: 4rem;
 
   &:before {
     content: "";
@@ -14,48 +14,60 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #e0b07f;
+    background-color: var(--main-color);
     opacity: 0.8;
     z-index: 1;
   }
 
   .benefits__container {
-    display: flex;
     position: relative;
     z-index: 2;
+    padding: 4rem;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 3rem;
 
     .benefits__content {
-      width: 55%;
+      flex: 1;
 
       .benefits__title {
         margin-bottom: 30px;
         font-size: 3rem;
         font-weight: 700;
-        color: #fff;
-        font-family: "Playfair Display", serif;
+        color: var(--light-color);
+        font-family: "Myriad Pro", sans-serif;
       }
 
       .benefits__desc {
         margin-bottom: 2rem;
         font-size: 1.2rem;
         font-weight: 400;
-        color: #fff;
+        color: var(--light-color);
         font-style: italic;
       }
 
-      .benefits__list {
-        margin-bottom: 1rem;
-        row-gap: 1rem;
-        width: 60%;
+      .benefits__listContainer {
+        margin-bottom: 2rem;
 
-        li {
-          font-size: 1rem;
-          font-weight: 500;
-          color: #000;
+        .benefits__list {
+          margin-bottom: 1rem;
+          row-gap: 1rem;
           display: flex;
-          align-items: center;
-          gap: 0.5rem;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          li {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+          }
         }
       }
     }
@@ -66,7 +78,7 @@
       justify-content: center;
       height: 100%;
       position: relative;
-      width: 45%;
+      flex: 1;
 
       &:before {
         content: "";

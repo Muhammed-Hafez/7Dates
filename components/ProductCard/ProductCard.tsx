@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./ProductCard.module.scss";
 import Link from "next/link";
 
@@ -14,11 +12,7 @@ export default function ProductCard({ img, title, url }: ProductCardProps) {
     <Link className={styles.product__card__container} href={`/products/${url}`}>
       <div className={styles.product__card}>
         <div className={styles.product__img}>
-          <img
-            src={img}
-            alt={title}
-            className="w-full h-full object-cover object-center"
-          />
+          <img src={img} alt={title} />
         </div>
 
         <div className={styles.product__details}>

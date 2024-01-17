@@ -1,15 +1,15 @@
 import Link from "next/link";
-
 import styles from "./Button.module.scss";
 
 interface ButtonProps {
-  title: string;
   url: string;
+  children: React.ReactNode;
 }
-export default function Button({ title, url }: ButtonProps) {
+
+export default function Button({ url, children }: ButtonProps) {
   return (
     <Link href={url} className={styles.button}>
-      {title}
+      {children}
     </Link>
   );
 }

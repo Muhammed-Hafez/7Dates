@@ -36,11 +36,11 @@
       .header__link {
         font-size: 1.2rem;
         font-weight: 500;
-        color: #fff;
+        color: var(--light-color);
         transition: color 0.2s ease;
 
         &:hover {
-          color: #37775f;
+          color: var(--main-color);
         }
       }
     }
@@ -55,7 +55,7 @@
 
       .header__navbar {
         .header__link {
-          color: #37775f;
+          color: var(--main-color);
         }
       }
     }

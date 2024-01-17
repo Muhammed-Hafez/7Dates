@@ -10,26 +10,24 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__container}>
-        <div className="mb-5">
-          <p className="text-lg text-center text-white">
-            Seven Dates Factory Packing and Processing Dates LLC © 2024
-          </p>
-        </div>
+        <p className={styles.copyright}>
+          Seven Dates Factory Packing and Processing Dates LLC © 2024
+        </p>
 
-        <ul className="flex items-center justify-center gap-3">
+        <ul className={styles.social__icons}>
           <li>
             <Link href="/">
-              <FaFacebook size={25} color={"#fff"} />
+              <FaFacebook size={25} color={"var(--light-color)"} />
             </Link>
           </li>
           <li>
             <Link href="/">
-              <FaInstagram size={25} color={"#fff"} />
+              <FaInstagram size={25} color={"var(--light-color)"} />
             </Link>
           </li>
           <li>
             <Link href="/">
-              <BsTwitterX size={25} color={"#fff"} />
+              <BsTwitterX size={25} color={"var(--light-color)"} />
             </Link>
           </li>
         </ul>

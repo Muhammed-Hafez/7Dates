@@ -6,54 +6,48 @@ import Button from "../Button/Button";
 
 const Benefits = () => {
   return (
-    <section className={`${styles.benefits} py-10 md:py-20 my-8`}>
-      <div
-        className={`${styles.benefits__container} py-4 px-12 max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-center gap-12`}
-      >
+    <section className={styles.benefits}>
+      <div className={styles.benefits__container}>
         <div className={`${styles.benefits__content}`}>
           <h2 className={styles.benefits__title}>
             The Health Marvels of Dates
           </h2>
-          <p className={`${styles.benefits__desc}`}>
+          <p className={styles.benefits__desc}>
             Dates, sweet fruits from the date palm tree, are more than just a
             delicious treat. <br /> Packed with essential nutrients, aiding
             digestion, and providing a natural energy boost, these tiny wonders
             are a must-have for a healthy diet.
           </p>
 
-          <div className={`${styles.benefits__listContainer} mb-12`}>
-            <ul
-              className={`${styles.benefits__list} flex md:flex-row items-start sm:flex-col justify-between`}
-            >
+          <div className={styles.benefits__listContainer}>
+            <ul className={styles.benefits__list}>
               <li>
-                <GoCheckCircleFill size={35} color={"#fff"} />
+                <GoCheckCircleFill size={35} color={"var(--light-color)"} />
                 Rich in Nutrients
               </li>
               <li>
-                <GoCheckCircleFill size={35} color={"#fff"} />
+                <GoCheckCircleFill size={35} color={"var(--light-color)"} />
                 Natural Energy Boost
               </li>
             </ul>
 
-            <ul
-              className={`${styles.benefits__list} flex md:flex-row items-start sm:flex-col justify-between`}
-            >
+            <ul className={styles.benefits__list}>
               <li>
-                <GoCheckCircleFill size={35} color={"#fff"} />
+                <GoCheckCircleFill size={35} color={"var(--light-color)"} />
                 High in Fiber
               </li>
               <li>
-                <GoCheckCircleFill size={35} color={"#fff"} />
+                <GoCheckCircleFill size={35} color={"var(--light-color)"} />
                 Heart Health Support
               </li>
             </ul>
           </div>
 
-          <Button title="Explore More" url="/products" />
+          <Button url="/products">Explore More</Button>
         </div>
 
         <div className={`${styles.benefits__video}`}>
-          <FaPlayCircle size={180} color={"#fff"} />
+          <FaPlayCircle size={180} color={"var(--light-color)"} />
         </div>
       </div>
     </section>
