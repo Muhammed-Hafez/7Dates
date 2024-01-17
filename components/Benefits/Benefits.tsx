@@ -47,7 +47,8 @@ const Benefits = () => {
         </div>
 
         <div className={`${styles.benefits__video}`}>
-          <FaPlayCircle size={180} color={"var(--light-color)"} />
+          {/* <FaPlayCircle size={180} color={"var(--light-color)"} /> */}
+          <img src="/videos/7dates.gif" alt="" />
         </div>
       </div>
     </section>

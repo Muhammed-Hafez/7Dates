@@ -8,12 +8,12 @@ const About = () => {
       <div className={styles.about__container}>
         <div className={styles.about__images}>
           <div className={styles.left__images}>
+            <img src="/images/about/about-2.jpg" alt="" />
             <img src="/images/about/about-1.jpg" alt="" />
-            <img src="/images/about/about-3.jpg" alt="" />
           </div>
           <div className={styles.right__images}>
+            <img src="/images/about/about-3.jpg" alt="" />
             <img src="/images/about/about-4.jpg" alt="" />
-            <img src="/images/about/about-2.jpg" alt="" />
           </div>
         </div>
 
