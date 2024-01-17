@@ -25,7 +25,7 @@ const ContactPage = () => {
               placeholder="Your message"
             ></textarea>
             <div className={styles.submit}>
-              <Button title="Send" url="#" />
+              <Button url="#">Send</Button>
             </div>
           </form>
         </div>
