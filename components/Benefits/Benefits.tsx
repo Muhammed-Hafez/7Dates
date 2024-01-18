@@ -9,7 +9,7 @@ const Benefits = () => {
     <section className={styles.benefits}>
       <div className={styles.benefits__container}>
         <div className={`${styles.benefits__content}`}>
-          <h2 className={styles.benefits__title}>Customise your order NOW!</h2>
+          <h2 className={styles.benefits__title}>Customize your order NOW!</h2>
           <p className={styles.benefits__desc}>
             Packed with essential nutrients, aiding digestion, and providing a
             natural energy boost, these tiny wonders are a must-have for a
