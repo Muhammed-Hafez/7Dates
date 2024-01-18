@@ -9,14 +9,11 @@ const Benefits = () => {
     <section className={styles.benefits}>
       <div className={styles.benefits__container}>
         <div className={`${styles.benefits__content}`}>
-          <h2 className={styles.benefits__title}>
-            The Health Marvels of Dates
-          </h2>
+          <h2 className={styles.benefits__title}>Customise your order NOW!</h2>
           <p className={styles.benefits__desc}>
-            Dates, sweet fruits from the date palm tree, are more than just a
-            delicious treat. <br /> Packed with essential nutrients, aiding
-            digestion, and providing a natural energy boost, these tiny wonders
-            are a must-have for a healthy diet.
+            Packed with essential nutrients, aiding digestion, and providing a
+            natural energy boost, these tiny wonders are a must-have for a
+            healthy diet.
           </p>
 
           <div className={styles.benefits__listContainer}>
