@@ -31,20 +31,20 @@ const products = [
   },
   {
     id: "5",
-    imgUrl: "/images/products/Majdoul.png",
+    imgUrl: "/images/products/Sagey.png",
     name: "Majdoul",
     desc: `Indulge in the regal experience of Majdoul dates plump which are golden, and irresistibly sweet. These dates are a true delicacy, known for their rich caramel-like flavor and soft, chewy texture. Majdoul dates are the epitome of luxury, offering a taste that lingers on the palate.
     they offer a multitude of health benefits. Renowned for their rich caramel-like flavor and delightful, soft, and chewy texture, Majdoul dates stand out as a true delicacy. Packed with essential nutrients, they contribute to overall well-being and represent the epitome of a luxurious and healthy treat.`,
   },
   {
     id: "6",
-    imgUrl: "/images/products/Sukkary.png",
+    imgUrl: "/images/products/Saudi.png",
     name: "Sukkary",
     desc: `Sukkary dates, the jewels of the date kingdom, are renowned for their amber hue and luscious, honey-like taste. Soft, with a melt-in-your-mouth consistency, Sukkary dates offer a delightful balance of sweetness and a hint of caramel. Sukkary dates not only delight the palate with their amber hue and honey-like taste but also offer health benefits.  Elevate your moments with the exquisite flavor of Sukkary.  `,
   },
   {
     id: "7",
-    imgUrl: "/images/products/Mabroom.png",
+    imgUrl: "/images/products/Ajwa.png",
     name: "Mabroom",
     desc: `Experience the natural sweetness of Mabroom dates, known for their elongated shape and rich, toffee-like flavor. Mabroom dates offer a satisfying chewiness and a nuanced taste that evolves with each bite. Enjoy the wholesome goodness and timeless charm of Mabroom dates.`,
   },
@@ -68,6 +68,7 @@ export default function ProductDetails() {
 
   return (
     <section className={styles.product__details}>
+      <section className={styles.product__banner}></section>
       <div className={styles.product__details__container}>
         <div className={styles.product__img}>
           <img src={imgUrl} alt="Product Image" />

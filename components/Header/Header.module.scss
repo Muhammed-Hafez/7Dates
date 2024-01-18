@@ -55,7 +55,11 @@
 
       .header__navbar {
         .header__link {
-          color: var(--main-color);
+          color: var(--dark-color);
+
+          &:hover {
+            color: var(--main-color);
+          }
         }
       }
     }

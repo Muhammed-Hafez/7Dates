@@ -34,19 +34,19 @@ const productList = [
   {
     _id: 5,
     title: "Majdoul",
-    img: "/images/products/Majdoul.png",
+    img: "/images/products/Saudi.png",
     url: "5",
   },
   {
     _id: 6,
     title: "Sukkary",
-    img: "/images/products/Sukkary.png",
+    img: "/images/products/Sagey.png",
     url: "6",
   },
   {
     _id: 7,
     title: "Mabroom",
-    img: "/images/products/Mabroom.png",
+    img: "/images/products/Safawy.png",
     url: "7",
   },
 ];

@@ -4,9 +4,11 @@ import styles from "../../styles/ContactPage.module.scss";
 const ContactPage = () => {
   return (
     <section className={styles.contact}>
+      <section className={styles.contact__banner}></section>
+
       <div className={styles.contact__container}>
         <div className={styles.contact__heading}>
-          <h1 className={styles.contact__title}>Contact</h1>
+          <h1 className={styles.contact__title}>Contact Us</h1>
         </div>
 
         <div className={styles.contact__form}>
