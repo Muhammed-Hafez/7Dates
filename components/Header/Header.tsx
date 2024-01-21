@@ -1,9 +1,13 @@
 "use client";
 
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.scss";
+
+import { MdMenu } from "react-icons/md";
+import { IoMdClose } from "react-icons/io";
+import MobileNav from "../MobileNav/MobileNav";
 
 const navLinks = [
   { id: "1", name: "Home", path: "/" },
@@ -15,6 +19,7 @@ const navLinks = [
 
 export default function Header() {
   const [scrollY, setScrollY] = useState(0);
+  const [showMobileNav, setShowMobileNav] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,10 +33,15 @@ export default function Header() {
     };
   }, []);
 
+  const toggleMobileNav = () => {
+    setShowMobileNav(!showMobileNav);
+  };
+
   return (
     <header
       className={`${styles.header} ${scrollY > 250 ? styles.scrolled : ""}`}
     >
+      {/* && !showMobileNav */}
       <div className={styles.header__container}>
         <Link href="/" className={styles.header__logo}>
           <Image
@@ -43,7 +53,8 @@ export default function Header() {
           />
         </Link>
 
-        <nav className={styles.header__navbar}>
+        {/* Desktop Navigation */}
+        <nav className={`${styles.header__navbar} ${styles.desktop__nav}`}>
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -54,7 +65,14 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+
+        {/* Mobile Navigation */}
+        <div className={styles.mobile__nav} onClick={toggleMobileNav}>
+          <MdMenu size={40} />
+        </div>
       </div>
+
+      {showMobileNav && <MobileNav />}
     </header>
   );
 }

@@ -114,3 +114,34 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .about {
+    .about__container {
+      max-width: 1200px;
+      gap: 2rem;
+
+      .about__content {
+        .about__subtitle {
+          font-size: 1.1rem;
+        }
+
+        .about__title {
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .about {
+    .about__container {
+      flex-direction: column;
+      max-width: 850px;
+
+      .about__images {
+      }
+    }
+  }
+}

@@ -12,7 +12,7 @@ const About = () => {
             <img src="/images/about/about-1.jpg" alt="" />
           </div>
           <div className={styles.right__images}>
-            <img src="/images/about/about-3.jpg" alt="" />
+            <img src="/images/about/about-3.jpeg" alt="" />
             <img src="/images/about/about-4.jpg" alt="" />
           </div>
         </div>
