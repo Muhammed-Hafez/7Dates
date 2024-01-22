@@ -4,149 +4,271 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 400px;
   margin-bottom: 3rem;
 }
 
-.about__content {
+.about__container {
   max-width: 1400px;
   margin: 0 auto;
-
-  h1 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-family: "Myriad Pro", sans-serif;
-    font-weight: 700;
-  }
-
-  p {
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: 400;
-  }
-}
-
-.about__story {
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 2rem 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 3rem;
-  margin-top: 3rem;
+  overflow: hidden;
 
-  .story__content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    h2 {
-      font-size: 2rem;
+  .about__content {
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 1rem;
       font-family: "Myriad Pro", sans-serif;
       font-weight: 700;
-      margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      text-align: center;
       font-weight: 400;
     }
   }
 
-  .story__img {
-    width: 50%;
-    height: 500px;
+  .about__story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding-inline: 1rem;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .story__content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      h2 {
+        font-size: 2rem;
+        font-family: "Myriad Pro", sans-serif;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+    }
+
+    .story__img {
+      width: 50%;
+      height: 400px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .about__vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-direction: row-reverse;
+    padding-inline: 1rem;
+
+    .vision__content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      h2 {
+        font-size: 2rem;
+        font-family: "Myriad Pro", sans-serif;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+    }
+
+    .vision__img {
+      width: 50%;
+      height: 400px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .about__mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding-inline: 1rem;
+
+    .mission__content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      h2 {
+        font-size: 2rem;
+        font-family: "Myriad Pro", sans-serif;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+    }
+
+    .mission__img {
+      width: 50%;
+      height: 400px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
 }
 
-.about__vision {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3rem;
-  margin-top: 3rem;
-  flex-direction: row-reverse;
+@media (min-width: 1200px) {
+}
 
-  .vision__content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+@media (max-width: 1200px) {
+  .about__container {
+    max-width: 1000px;
 
-    h2 {
-      font-size: 2rem;
-      font-family: "Myriad Pro", sans-serif;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-      font-weight: 400;
-    }
-  }
-
-  .vision__img {
-    width: 50%;
-    height: 500px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .about__story,
+    .about__vision,
+    .about__mission {
+      padding-inline: 0rem;
     }
   }
 }
 
-.about__mission {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3rem;
-  margin-top: 3rem;
+@media (max-width: 992px) {
+  .about__container {
+    max-width: 900px;
 
-  .mission__content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    h2 {
-      font-size: 2rem;
-      font-family: "Myriad Pro", sans-serif;
-      font-weight: 700;
-      margin-bottom: 1rem;
+    .about__story,
+    .about__vision,
+    .about__mission {
+      flex-direction: column;
+      padding-inline: 0rem;
+      align-items: flex-start;
     }
 
-    p {
-      font-size: 1.1rem;
-      font-weight: 400;
+    .about__story {
+      .story__content {
+        width: 100%;
+      }
+
+      .story__img {
+        width: 100%;
+
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+
+    .about__vision {
+      flex-direction: column;
+
+      .vision__content {
+        width: 100%;
+      }
+
+      .vision__img {
+        width: 100%;
+
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+
+    .about__mission {
+      flex-direction: column;
+
+      .mission__content {
+        width: 100%;
+      }
+
+      .mission__img {
+        width: 100%;
+
+        img {
+          object-fit: contain;
+        }
+      }
     }
   }
+}
 
-  .mission__img {
-    width: 50%;
-    height: 500px;
+@media (max-width: 768px) {
+  .about__container {
+    max-width: 700px;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .about__story,
+    .about__vision,
+    .about__mission {
+      flex-direction: column;
+      padding-inline: 0rem;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .about__container {
+    max-width: 400px;
+
+    .about__story,
+    .about__vision,
+    .about__mission {
+      flex-direction: column;
+      padding-inline: 0rem;
+      align-items: flex-start;
+    }
+
+    .about__story,
+    .about__vision,
+    .about__mission {
+      .story__img,
+      .vision__img,
+      .mission__img {
+        height: 300px;
+
+        img {
+          object-fit: contain;
+        }
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 .product__card__container {
   position: relative;
-  max-width: 300px;
   width: 300px;
+  max-width: 300px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -51,6 +51,30 @@
         font-family: "Myriad Pro", sans-serif;
         color: var(--light-color);
         text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .product__card__container {
+    .product__card {
+      .product__details {
+        .product__name {
+          font-size: 1.2rem;
+        }
       }
     }
   }
