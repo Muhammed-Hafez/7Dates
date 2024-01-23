@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import styles from "./MobileNav.module.scss";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
@@ -13,45 +13,31 @@ const navLinks = [
   { id: "5", name: "Contact", path: "/contact" },
 ];
 
-const MobileNav = () => {
-  const [showMobileNav, setShowMobileNav] = useState(true);
+interface MobileNavProps {
+  onClose: () => void;
+}
 
-  const closeMobileNav = () => {
-    setShowMobileNav(false);
-  };
-
-  const handleLinkClick = () => {
-    closeMobileNav();
-  };
-
-  const toggleMobileNav = () => {
-    setShowMobileNav((prevShowMobileNav) => !prevShowMobileNav);
-  };
-
-  const renderNavLinks = () => {
-    return navLinks.map((link) => (
-      <Link
-        key={link.name}
-        href={link.path}
-        className={styles.mobile__nav__link}
-        onClick={handleLinkClick}
-      >
-        {link.name.toUpperCase()}
-      </Link>
-    ));
-  };
-
+const MobileNav = ({ onClose }: MobileNavProps) => {
   return (
     <nav>
-      {showMobileNav && (
-        <div className={styles.mobile__links}>
-          <div className={styles.mobile__nav__links}>{renderNavLinks()}</div>
-
-          <div className={styles.close__icon} onClick={toggleMobileNav}>
-            <IoMdClose size={35} />
-          </div>
+      <div className={styles.mobile__links}>
+        <div className={styles.mobile__nav__links}>
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.path}
+              className={styles.mobile__nav__link}
+              onClick={onClose}
+            >
+              {link.name.toUpperCase()}
+            </Link>
+          ))}
         </div>
-      )}
+
+        <div className={styles.close__icon} onClick={onClose}>
+          <IoMdClose size={35} />
+        </div>
+      </div>
     </nav>
   );
 };

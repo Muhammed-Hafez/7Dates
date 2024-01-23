@@ -67,7 +67,7 @@ const Header = () => {
         </button>
       </div>
 
-      {showMobileNav && <MobileNav />}
+      {showMobileNav && <MobileNav onClose={toggleMobileNav} />}
     </header>
   );
 };

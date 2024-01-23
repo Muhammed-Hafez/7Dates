@@ -82,6 +82,17 @@
           object-fit: contain;
         }
       }
+
+      .product__content {
+        padding-inline: 1rem;
+        h2 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
@@ -102,6 +113,7 @@
       }
 
       .product__content {
+        padding-inline: 1rem;
         h2 {
           font-size: 2rem;
         }
