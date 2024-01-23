@@ -168,10 +168,10 @@
 @media (max-width: 992px) {
   .benefits {
     .benefits__container {
-      padding: 2rem;
+      padding: 0 2rem;
       max-width: 950px;
-      flex-direction: column;
-      padding-bottom: 0;
+      flex-direction: column-reverse;
+      padding-bottom: 1rem;
 
       .benefits__content {
         .benefits__title {
@@ -205,10 +205,11 @@
   .benefits {
     .benefits__container {
       max-width: 400px;
-      padding: 1rem;
-      padding-bottom: 0;
+      padding: 0;
+      padding-bottom: 2rem;
 
       .benefits__content {
+        padding-inline: 1rem;
         .benefits__title {
           font-size: 1.5rem;
         }
