@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.scss";
 
@@ -44,11 +43,9 @@ export default function Header() {
       {/* && !showMobileNav */}
       <div className={styles.header__container}>
         <Link href="/" className={styles.header__logo}>
-          <Image
+          <img
             src="/images/logo-v3.png"
             alt="Seven Dates"
-            width={250}
-            height={250}
             className={styles.header__logo__img}
           />
         </Link>

@@ -20,11 +20,18 @@
     .header__logo {
       position: absolute;
       left: 7%;
-      top: -1rem;
+      top: -1.5rem;
       transform: translateX(-50%);
       overflow: visible;
       z-index: 20;
       padding: 0.5rem;
+      width: 15rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     .header__navbar {
@@ -131,6 +138,38 @@
   .header {
     .header__container {
       max-width: 700px;
+
+      .header__logo {
+        left: 12%;
+      }
+
+      .header__navbar {
+        display: none;
+
+        .header__link {
+          font-size: 1.2rem;
+        }
+      }
+
+      .mobile__nav {
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    .header__container {
+      max-width: 400px;
+      padding-inline: 1rem;
+
+      .header__logo {
+        left: 20%;
+        width: 12rem;
+        top: -0.5rem;
+      }
 
       .header__navbar {
         display: none;
