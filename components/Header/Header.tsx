@@ -1,12 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import styles from "./Header.module.scss";
-
 import { MdMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 import MobileNav from "../MobileNav/MobileNav";
+import styles from "./Header.module.scss";
 
 const navLinks = [
   { id: "1", name: "Home", path: "/" },
@@ -16,7 +15,7 @@ const navLinks = [
   { id: "5", name: "Contact", path: "/contact" },
 ];
 
-export default function Header() {
+const Header = () => {
   const [scrollY, setScrollY] = useState(0);
   const [showMobileNav, setShowMobileNav] = useState(false);
 
@@ -36,11 +35,18 @@ export default function Header() {
     setShowMobileNav(!showMobileNav);
   };
 
+  const renderNavLinks = () => {
+    return navLinks.map((link) => (
+      <Link key={link.name} href={link.path} className={styles.header__link}>
+        {link.name.toUpperCase()}
+      </Link>
+    ));
+  };
+
   return (
     <header
       className={`${styles.header} ${scrollY > 250 ? styles.scrolled : ""}`}
     >
-      {/* && !showMobileNav */}
       <div className={styles.header__container}>
         <Link href="/" className={styles.header__logo}>
           <img
@@ -52,24 +58,18 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className={`${styles.header__navbar} ${styles.desktop__nav}`}>
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.path}
-              className={styles.header__link}
-            >
-              {link.name.toUpperCase()}
-            </Link>
-          ))}
+          {renderNavLinks()}
         </nav>
 
         {/* Mobile Navigation */}
-        <div className={styles.mobile__nav} onClick={toggleMobileNav}>
+        <button className={styles.mobile__nav} onClick={toggleMobileNav}>
           <MdMenu size={40} />
-        </div>
+        </button>
       </div>
 
       {showMobileNav && <MobileNav />}
     </header>
   );
-}
+};
+
+export default Header;

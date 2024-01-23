@@ -166,7 +166,7 @@
     .about__story,
     .about__vision,
     .about__mission {
-      padding-inline: 0rem;
+      padding-inline: 1rem;
     }
   }
 }
@@ -179,7 +179,7 @@
     .about__vision,
     .about__mission {
       flex-direction: column;
-      padding-inline: 0rem;
+      padding-inline: 1rem;
       align-items: flex-start;
     }
 
@@ -239,7 +239,7 @@
     .about__vision,
     .about__mission {
       flex-direction: column;
-      padding-inline: 0rem;
+      padding-inline: 1rem;
       align-items: flex-start;
     }
   }
@@ -249,12 +249,35 @@
   .about__container {
     max-width: 400px;
 
+    .about__content {
+      padding-inline: 1rem;
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
     .about__story,
     .about__vision,
     .about__mission {
       flex-direction: column;
-      padding-inline: 0rem;
+      padding-inline: 1rem;
       align-items: flex-start;
+
+      .story__content,
+      .vision__content,
+      .mission__content {
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
     }
 
     .about__story,
