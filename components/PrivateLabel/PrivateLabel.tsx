@@ -1,7 +1,16 @@
+"use client";
+
+import { useParams } from "next/navigation";
+
+import { useI18n } from "@/utils/translate";
+
 import Button from "../Button/Button";
 import styles from "./PrivateLabel.module.scss";
 
 export default function PrivateLabel() {
+  const { t } = useI18n();
+  const { locale } = useParams();
+
   return (
     <section className={styles.private}>
       <div className={styles.private__container}>
@@ -10,11 +19,11 @@ export default function PrivateLabel() {
         </div>
 
         <div className={styles.private__content}>
-          <h1 className={styles.private__title}>Private Label</h1>
+          <h1 className={styles.private__title}>{t("Private Label")}</h1>
           <p className={styles.private__desc}>
-            We offer convenience, quality and flexibility Seven Dates Factory
-            Packing and Processing Dates LLC - a local based Dates manufacturing
-            company in United Arab Emirates.
+            {t(
+              "We offer convenience, quality and flexibility 7Dates Factory Packing and Processing Dates LLC - a local based Dates manufacturing company in United Arab Emirates."
+            )}
           </p>
 
           <p
@@ -23,12 +32,12 @@ export default function PrivateLabel() {
               marginBottom: "2rem",
             }}
           >
-            Seven Dates principal goal is to provide the highest quality dates
-            products to UAE nationals, residents, the Gulf Countries and whole
-            world.
+            {t(
+              "7Dates principal goal is to provide the highest quality dates products to UAE nationals, residents, the Gulf Countries and whole world."
+            )}
           </p>
 
-          <Button url="/private-label">Learn More</Button>
+          <Button url="/private-label">{t("Learn More")}</Button>
         </div>
       </div>
     </section>

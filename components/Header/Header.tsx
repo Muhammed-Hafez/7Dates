@@ -2,9 +2,14 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { useParams } from "next/navigation";
+
 import { MdMenu } from "react-icons/md";
-import { IoMdClose } from "react-icons/io";
+
+import { useI18n } from "@/utils/translate";
+
 import MobileNav from "../MobileNav/MobileNav";
+
 import styles from "./Header.module.scss";
 
 const navLinks = [
@@ -19,6 +24,9 @@ const navLinks = [
 const Header = () => {
   const [scrollY, setScrollY] = useState(0);
   const [showMobileNav, setShowMobileNav] = useState(false);
+
+  const { t } = useI18n();
+  const { locale } = useParams();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +47,7 @@ const Header = () => {
   const renderNavLinks = () => {
     return navLinks.map((link) => (
       <Link key={link.name} href={link.path} className={styles.header__link}>
-        {link.name.toUpperCase()}
+        {t(link.name).toUpperCase()}
       </Link>
     ));
   };
@@ -52,7 +60,7 @@ const Header = () => {
         <Link href="/" className={styles.header__logo}>
           <img
             src="/images/logo-v3.png"
-            alt="Seven Dates"
+            alt="7Dates"
             className={styles.header__logo__img}
           />
         </Link>

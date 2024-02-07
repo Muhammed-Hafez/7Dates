@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footer__container}>
         <p className={styles.copyright}>
-          Seven Dates Factory Packing and Processing Dates LLC © 2024
+          7Dates Factory Packing and Processing Dates LLC © 2024
         </p>
 
         <ul className={styles.social__icons}>

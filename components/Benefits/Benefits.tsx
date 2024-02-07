@@ -1,46 +1,58 @@
+"use client";
+
 import Link from "next/link";
+import { useParams } from "next/navigation";
+
 import { GoCheckCircleFill } from "react-icons/go";
 import { FaPlayCircle } from "react-icons/fa";
-import styles from "./Benefits.module.scss";
+import { useI18n } from "@/utils/translate";
+
 import Button from "../Button/Button";
 
+import styles from "./Benefits.module.scss";
+
 const Benefits = () => {
+  const { t } = useI18n();
+  const { locale } = useParams();
+
   return (
     <section className={styles.benefits}>
       <div className={styles.benefits__container}>
         <div className={`${styles.benefits__content}`}>
-          <h2 className={styles.benefits__title}>Customize your order NOW!</h2>
+          <h2 className={styles.benefits__title}>
+            {t("Customize your order NOW!")}
+          </h2>
           <p className={styles.benefits__desc}>
-            Packed with essential nutrients, aiding digestion, and providing a
-            natural energy boost, these tiny wonders are a must-have for a
-            healthy diet.
+            {t(
+              "Packed with essential nutrients, aiding digestion, and providing a natural energy boost, these tiny wonders are a must-have for a healthy diet."
+            )}
           </p>
 
           <div className={styles.benefits__listContainer}>
             <ul className={styles.benefits__list}>
               <li>
                 <GoCheckCircleFill size={35} color={"var(--light-color)"} />
-                Rich in Nutrients
+                {t("Rich in Nutrients")}
               </li>
               <li>
                 <GoCheckCircleFill size={35} color={"var(--light-color)"} />
-                Natural Energy Boost
+                {t("Natural Energy Boost")}
               </li>
             </ul>
 
             <ul className={styles.benefits__list}>
               <li>
                 <GoCheckCircleFill size={35} color={"var(--light-color)"} />
-                High in Fiber
+                {t("High in Fiber")}
               </li>
               <li>
                 <GoCheckCircleFill size={35} color={"var(--light-color)"} />
-                Heart Health Support
+                {t("Heart Health Support")}
               </li>
             </ul>
           </div>
 
-          <Button url="/products">Explore More</Button>
+          <Button url="/products">{t("Explore More")}</Button>
         </div>
 
         <div className={`${styles.benefits__video}`}>

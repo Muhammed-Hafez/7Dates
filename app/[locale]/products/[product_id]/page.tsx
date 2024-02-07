@@ -16,7 +16,7 @@ const products = [
     id: "2",
     imgUrl: "/images/products/Safawy.jpg",
     name: "Safawy",
-    desc: `Safawi dates, with their dark color and intense sweetness, captivate the senses with every bite and bring along a plethora of health benefits. Highly prized for their distinctive taste, reminiscent of molasses and rich caramel, Safawi dates serve as a testament to the unparalleled quality and sophistication that Seven Dates embodies. Enjoy the exquisite flavor while reaping the health rewards of Safawi dates.`,
+    desc: `Safawi dates, with their dark color and intense sweetness, captivate the senses with every bite and bring along a plethora of health benefits. Highly prized for their distinctive taste, reminiscent of molasses and rich caramel, Safawi dates serve as a testament to the unparalleled quality and sophistication that 7Dates embodies. Enjoy the exquisite flavor while reaping the health rewards of Safawi dates.`,
     banner: "/images/products-banners/Safawy.jpg",
   },
   {

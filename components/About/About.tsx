@@ -1,8 +1,16 @@
+"use client";
+
+import { useParams } from "next/navigation";
+
+import { useI18n } from "@/utils/translate";
+
 import styles from "./About.module.scss";
 import Button from "../Button/Button";
-// import Divider from "../Divider/Divider";
 
 const About = () => {
+  const { t } = useI18n();
+  const { locale } = useParams();
+
   return (
     <section className={styles.about}>
       <div className={styles.about__container}>
@@ -18,16 +26,17 @@ const About = () => {
         </div>
 
         <div className={styles.about__content}>
-          <p className={styles.about__subtitle}>About Us</p>
+          <p className={styles.about__subtitle}>{t("About Us")}</p>
           <h1 className={styles.about__title}>
-            The success history of <br /> 7Dates in 18 years
+            {t("The success history of")} <br /> {t("7Dates in 18 years")}
           </h1>
 
           {/* <Divider /> */}
 
           <p className={styles.about__desc}>
-            We have more than 18 years of experience in sourcing and packing the
-            finest dates products.
+            {t(
+              "We have more than 18 years of experience in sourcing and packing the finest dates products."
+            )}
           </p>
 
           <p
@@ -36,11 +45,11 @@ const About = () => {
               marginBottom: "2rem",
             }}
           >
-            Seven Dates principal goal is to provide the highest quality dates
-            products to UAE nationals, residents, the Gulf Countries and whole
-            world.
+            {t(
+              "7Dates principal goal is to provide the highest quality dates products to UAE nationals, residents, the Gulf Countries and whole world."
+            )}
           </p>
-          <Button url="/about">Read More</Button>
+          <Button url="/about">{t("Read More")}</Button>
         </div>
       </div>
     </section>

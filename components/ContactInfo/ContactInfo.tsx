@@ -1,3 +1,9 @@
+"use client";
+
+import { useParams } from "next/navigation";
+
+import { useI18n } from "@/utils/translate";
+
 import { FaPhone } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
@@ -5,11 +11,14 @@ import { FaLocationDot } from "react-icons/fa6";
 import styles from "./ContactInfo.module.scss";
 
 const ContactInfo = () => {
+  const { t } = useI18n();
+  const { locale } = useParams();
+
   return (
     <section className={styles.contact}>
       <div className={styles.contact__container}>
-        <p className={styles.contact__subtitle}>Contact Us</p>
-        <h2 className={styles.contact__title}>Get in touch with us.</h2>
+        <p className={styles.contact__subtitle}>{t("Contact Us")}</p>
+        <h2 className={styles.contact__title}>{t("Get in touch with us.")}</h2>
 
         <ul className={styles.contact__list}>
           <li>

@@ -5,17 +5,18 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
 import "../styles/globals.scss";
+import TsWrapper from "@/components/TsWrapper/TsWrapper";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Seven Dates",
+  title: "7Dates",
   description: "We offer convenience, quality, and flexibility.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://sevendates.com",
-    siteName: "Seven Dates",
+    siteName: "7Dates",
   },
   icons: [
     {
@@ -32,11 +33,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html>
       <body className={openSans.className}>
-        <Header />
-        {children}
-        <Footer />
+        <TsWrapper>
+          <Header />
+          {children}
+          <Footer />
+        </TsWrapper>
       </body>
     </html>
   );

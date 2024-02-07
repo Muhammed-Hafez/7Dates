@@ -1,3 +1,9 @@
+"use client";
+
+import { useParams } from "next/navigation";
+
+import { useI18n } from "@/utils/translate";
+
 import styles from "./Clients.module.scss";
 
 const clients = [
@@ -39,10 +45,13 @@ const clients = [
 ];
 
 export default function Clients() {
+  const { t } = useI18n();
+  const { locale } = useParams();
+
   return (
     <section className="w-full">
       <div className={styles.clients__container}>
-        <h2 className={styles.clients__title}>Our Clients</h2>
+        <h2 className={styles.clients__title}>{t("Our Clients")}</h2>
 
         <ul className={styles.clients__list}>
           {clients.map((client) => (

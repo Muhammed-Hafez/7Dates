@@ -10,18 +10,18 @@ const AboutPage = () => {
       <div className={styles.about__container}>
         <section className={styles.about__content}>
           <h1>About Us</h1>
-          <p>The success history of 7 Dates in 18 years</p>
+          <p>The success history of 7Dates in 18 years</p>
         </section>
 
         <section className={styles.about__story}>
           <div className={styles.story__content}>
             <h2>Our Story</h2>
             <p>
-              With a legacy spanning over 18 years, Seven Dates Factory Packing
-              and Processing Dates LLC has been a pioneer in sourcing and
-              packing the finest date products. Our journey is rooted in a
-              dedication to quality, customer satisfaction, and a passion for
-              delivering the best of the UAE's date varieties.
+              With a legacy spanning over 18 years, 7Dates Factory Packing and
+              Processing Dates LLC has been a pioneer in sourcing and packing
+              the finest date products. Our journey is rooted in a dedication to
+              quality, customer satisfaction, and a passion for delivering the
+              best of the UAE's date varieties.
             </p>
           </div>
 
@@ -34,7 +34,7 @@ const AboutPage = () => {
           <div className={styles.vision__content}>
             <h2>Vision</h2>
             <p>
-              At Seven Dates, our vision is to be the leading provider of
+              At 7Dates, our vision is to be the leading provider of
               high-quality date products globally, ensuring convenience,
               excellence, and a touch of tradition in every date
             </p>
