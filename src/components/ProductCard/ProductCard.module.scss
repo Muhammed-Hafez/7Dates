@@ -1,0 +1,81 @@
+.product__card__container {
+  position: relative;
+  width: 300px;
+  max-width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-center;
+  align-items: center;
+  height: max-content;
+
+  .product__card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--main-color);
+
+    .product__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 260px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        aspect-ratio: 1/1;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .product__details {
+      text-align: center;
+      width: 85%;
+      margin: 0 auto;
+      background-color: var(--main-color);
+      padding: 0.5rem;
+      width: 100%;
+
+      .product__name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        font-family: "Tajawal", sans-serif;
+        color: var(--light-color);
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .product__card__container {
+    .product__card {
+      .product__details {
+        .product__name {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
