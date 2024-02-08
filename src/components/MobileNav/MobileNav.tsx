@@ -9,15 +9,6 @@ import { useI18n } from "../../utils/translate";
 import styles from "./MobileNav.module.scss";
 import { IoMdClose } from "react-icons/io";
 
-const navLinks = [
-  { id: "1", name: "Home", path: "/" },
-  { id: "2", name: "About", path: "/about" },
-  { id: "3", name: "Products", path: "/products" },
-  { id: "4", name: "Private Label", path: "/private-label" },
-  { id: "5", name: "Gift Box", path: "/gift-box" },
-  { id: "6", name: "Contact", path: "/contact" },
-];
-
 interface MobileNavProps {
   onClose: () => void;
 }
@@ -26,6 +17,37 @@ const MobileNav = ({ onClose }: MobileNavProps) => {
   const { t } = useI18n();
   const { locale } = useParams();
   const router = useRouter();
+
+  const navLinks = [
+    { id: "1", name: "Home", path: `${locale === "en" ? "/" : `/${locale}`}` },
+    {
+      id: "2",
+      name: "About",
+      path: `${locale === "en" ? "/about" : `/${locale}/about`}`,
+    },
+    {
+      id: "3",
+      name: "Products",
+      path: `${locale === "en" ? "/products" : `/${locale}/products`}`,
+    },
+    {
+      id: "4",
+      name: "Private Label",
+      path: `${
+        locale === "en" ? "/private-label" : `/${locale}/private-label`
+      }`,
+    },
+    {
+      id: "5",
+      name: "Gift Box",
+      path: `${locale === "en" ? "/gift-box" : `/${locale}/gift-box`}`,
+    },
+    {
+      id: "6",
+      name: "Contact",
+      path: `${locale === "en" ? "/contact" : `/${locale}/contact`}`,
+    },
+  ];
 
   // useState to store the current language
   const [language, setLanguage] = useState(locale || "en");
