@@ -75,12 +75,7 @@ const Header = () => {
     const newLanguage = language === "en" ? "ar" : "en";
     setLanguage(newLanguage);
 
-    // Change Language and stay on the same page
-    const currentPath = window.location.pathname;
-    const newPath = currentPath.replace(`/${language}`, `/${newLanguage}`);
-    window.history.pushState({}, "", newPath);
-
-    router.push(newPath);
+    router.push(`/${newLanguage}`);
 
     toggleMobileNav();
   };
