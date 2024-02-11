@@ -7,7 +7,7 @@ import { GoCheckCircleFill } from "react-icons/go";
 import { FaPlayCircle } from "react-icons/fa";
 import { useI18n } from "../../utils/translate";
 
-import Button from "../Button/Button";
+import CustomLink from "../CustomLink/CustomLink";
 
 import styles from "./Benefits.module.scss";
 
@@ -52,7 +52,9 @@ const Benefits = () => {
             </ul>
           </div>
 
-          <Button url="/products">{t("Explore More")}</Button>
+          <CustomLink url={`/${locale}/gift-box`}>
+            {t("Explore More")}
+          </CustomLink>
         </div>
 
         <div className={`${styles.benefits__video}`}>

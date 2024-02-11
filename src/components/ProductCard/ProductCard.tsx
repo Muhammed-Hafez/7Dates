@@ -9,7 +9,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ img, title, url }: ProductCardProps) {
   return (
-    <Link className={styles.product__card__container} href={`/products/${url}`}>
+    <Link className={styles.product__card__container} href={url}>
       <div className={styles.product__card}>
         <div className={styles.product__img}>
           <img src={img} alt={title} />

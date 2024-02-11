@@ -4,11 +4,13 @@ import { useParams } from "next/navigation";
 
 import { useI18n } from "../../utils/translate";
 
+import CustomLink from "../CustomLink/CustomLink";
+
 import styles from "./About.module.scss";
-import Button from "../Button/Button";
 
 const About = () => {
   const { t } = useI18n();
+  const { locale } = useParams();
 
   return (
     <section className={styles.about}>
@@ -30,8 +32,6 @@ const About = () => {
             {t("The success history of")} <br /> {t("7Dates in 18 years")}
           </h1>
 
-          {/* <Divider /> */}
-
           <p className={styles.about__desc}>
             {t(
               "We have more than 18 years of experience in sourcing and packing the finest dates products."
@@ -48,7 +48,7 @@ const About = () => {
               "7Dates principal goal is to provide the highest quality dates products to UAE nationals, residents, the Gulf Countries and whole world."
             )}
           </p>
-          <Button url="/about">{t("Read More")}</Button>
+          <CustomLink url={`/${locale}/about`}>{t("Read More")}</CustomLink>
         </div>
       </div>
     </section>

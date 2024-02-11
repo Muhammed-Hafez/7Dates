@@ -75,7 +75,11 @@ const Products = () => {
               key={product._id}
               img={product.img}
               title={product.title}
-              url={product.url}
+              url={
+                locale === "en"
+                  ? `products/${product.url}`
+                  : `/${locale}/products/${product.url}`
+              }
             />
           ))}
         </div>

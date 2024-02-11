@@ -2,7 +2,7 @@
 
 import { useI18n } from "../../../utils/translate";
 
-import Button from "../../../components/Button/Button";
+import CustomLink from "../../../components/CustomLink/CustomLink";
 
 import styles from "../../../styles/ContactPage.module.scss";
 
@@ -39,7 +39,7 @@ const ContactPage = () => {
               placeholder={`${t("Your message")}`}
             ></textarea>
             <div className={styles.submit}>
-              <Button url="#">{t("Send")}</Button>
+              <CustomLink url="#">{t("Send")}</CustomLink>
             </div>
           </form>
         </div>

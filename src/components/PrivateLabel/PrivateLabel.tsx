@@ -4,7 +4,8 @@ import { useParams } from "next/navigation";
 
 import { useI18n } from "../../utils/translate";
 
-import Button from "../Button/Button";
+import CustomLink from "../CustomLink/CustomLink";
+
 import styles from "./PrivateLabel.module.scss";
 
 export default function PrivateLabel() {
@@ -37,7 +38,9 @@ export default function PrivateLabel() {
             )}
           </p>
 
-          <Button url="/private-label">{t("Learn More")}</Button>
+          <CustomLink url={`/${locale}/private-label`}>
+            {t("Learn More")}
+          </CustomLink>
         </div>
       </div>
     </section>
