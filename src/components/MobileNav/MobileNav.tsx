@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
+import { useParams, usePathname, useRouter } from "next/navigation";
 
 import { useI18n } from "../../utils/translate";
 
@@ -52,10 +52,14 @@ const MobileNav = ({ onClose }: MobileNavProps) => {
   // useState to store the current language
   const [language, setLanguage] = useState(locale || "en");
 
+  const pathname = usePathname();
+
   const handleLanguageChange = () => {
     const newLanguage = language === "en" ? "ar" : "en";
     setLanguage(newLanguage);
-    router.push(`/${newLanguage}`);
+
+    const newPath = pathname.replace(`/${language}`, `/${newLanguage}`);
+    router.push(newPath);
 
     onClose();
   };

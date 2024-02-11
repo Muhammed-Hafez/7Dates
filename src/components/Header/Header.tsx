@@ -77,7 +77,10 @@ const Header = () => {
     const newLanguage = language === "en" ? "ar" : "en";
     setLanguage(newLanguage);
 
-    router.push(`/${newLanguage}`);
+    const newPath = pathname.replace(`/${language}`, `/${newLanguage}`);
+    router.push(newPath);
+
+    console.log(pathname);
 
     toggleMobileNav();
   };
