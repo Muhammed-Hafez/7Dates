@@ -26,14 +26,14 @@ function Hero() {
     },
     {
       id: 2,
-      image: "/images/slider-images/003.jpg",
+      image: "/images/slider-images/002.jpg",
       quote: t(
         "“Empower your brand with the richness of 7Dates where tradition meets innovation, and quality becomes an enduring partnership.”"
       ),
     },
     {
       id: 3,
-      image: "/images/slider-images/002.jpg",
+      image: "/images/slider-images/004.jpg",
       quote: t(
         "“Journey through the oasis of flavor 7Dates, where the authenticity of tradition meets the innovation of excellence.”"
       ),

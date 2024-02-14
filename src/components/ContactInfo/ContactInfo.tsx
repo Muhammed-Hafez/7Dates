@@ -24,9 +24,9 @@ const ContactInfo = () => {
             <FaLocationDot className={styles.contact__icon} />
             {t("Umm Al Quwain")} <br /> {t("United Arab Emirates")}
           </li>
-          <li>
+          <li dir="ltr">
             <FaPhone className={styles.contact__icon} />
-            +91 1234567890
+            +9716 5363755
           </li>
           <li>
             <IoMdMail className={styles.contact__icon} />
