@@ -3,9 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useParams, usePathname, useRouter } from "next/navigation";
-
 import { useI18n } from "../../utils/translate";
-
 import styles from "./MobileNav.module.scss";
 import { IoMdClose } from "react-icons/io";
 

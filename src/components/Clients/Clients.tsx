@@ -1,9 +1,7 @@
 "use client";
 
 import { useParams } from "next/navigation";
-
 import { useI18n } from "../../utils/translate";
-
 import styles from "./Clients.module.scss";
 
 const clients = [

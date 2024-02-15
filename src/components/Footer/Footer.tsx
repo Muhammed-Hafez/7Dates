@@ -1,13 +1,10 @@
 "use client";
 
 import Link from "next/link";
-
 import { useI18n } from "../../utils/translate";
-
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
-
 import styles from "./Footer.module.scss";
 
 export default function Footer() {

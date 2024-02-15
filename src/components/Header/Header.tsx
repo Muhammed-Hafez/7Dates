@@ -3,15 +3,10 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useParams, useRouter, usePathname } from "next/navigation";
-
 import { MdMenu } from "react-icons/md";
-
 import { useI18n } from "../../utils/translate";
-
 import MobileNav from "../MobileNav/MobileNav";
-
 import styles from "./Header.module.scss";
-import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 
 const Header = () => {
   const [scrollY, setScrollY] = useState(0);

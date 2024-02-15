@@ -1,14 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { useParams } from "next/navigation";
-
 import { GoCheckCircleFill } from "react-icons/go";
-import { FaPlayCircle } from "react-icons/fa";
 import { useI18n } from "../../utils/translate";
-
 import CustomLink from "../CustomLink/CustomLink";
-
 import styles from "./Benefits.module.scss";
 
 const Benefits = () => {

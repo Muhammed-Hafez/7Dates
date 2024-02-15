@@ -1,11 +1,8 @@
 "use client";
 
 import { useParams } from "next/navigation";
-
 import { useI18n } from "../../utils/translate";
-
 import CustomLink from "../CustomLink/CustomLink";
-
 import styles from "./About.module.scss";
 
 const About = () => {

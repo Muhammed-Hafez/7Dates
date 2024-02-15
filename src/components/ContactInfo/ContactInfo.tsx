@@ -1,13 +1,10 @@
 "use client";
 
 import { useParams } from "next/navigation";
-
 import { useI18n } from "../../utils/translate";
-
 import { FaPhone } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
-
 import styles from "./ContactInfo.module.scss";
 
 const ContactInfo = () => {

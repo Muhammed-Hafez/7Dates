@@ -1,13 +1,9 @@
 "use client";
 
 import { useParams } from "next/navigation";
-
 import "@splidejs/react-splide/css/core";
-
 import { useI18n } from "../../utils/translate";
-
 import ProductCard from "../ProductCard/ProductCard";
-
 import styles from "./Products.module.scss";
 
 const Products = () => {

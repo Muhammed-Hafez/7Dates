@@ -1,15 +1,11 @@
 "use client";
 
 import { useParams } from "next/navigation";
-
 import "@splidejs/react-splide/css/core";
 import "@splidejs/splide/dist/css/splide.min.css";
-
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
-
 import { useI18n } from "../../utils/translate";
-
 import styles from "./Hero.module.scss";
 
 function Hero() {
@@ -38,24 +34,6 @@ function Hero() {
         "“Journey through the oasis of flavor 7Dates, where the authenticity of tradition meets the innovation of excellence.”"
       ),
     },
-    // {
-    //   id: 4,
-    //   image: "/images/slider-images/004.jpg",
-    //   quote:
-    //     "“Journey through the oasis of flavor 7Dates, where the authenticity of tradition meets the innovation of excellence.”",
-    // },
-    // {
-    //   id: 5,
-    //   image: "/images/slider-images/005.jpg",
-    //   quote:
-    //     "“Journey through the oasis of flavor 7Dates, where the authenticity of tradition meets the innovation of excellence.”",
-    // },
-    // {
-    //   id: 6,
-    //   image: "/images/slider-images/006.jpg",
-    //   quote:
-    //     "“Journey through the oasis of flavor 7Dates, where the authenticity of tradition meets the innovation of excellence.”",
-    // },
   ];
 
   return (
@@ -83,6 +61,7 @@ function Hero() {
             <div className={styles.img__container}>
               <img src={slide.image} alt="slider image" />
               <div className={styles.overlay}></div>
+
               <div className={styles.hero__quote}>
                 <h3>{slide.quote}</h3>
               </div>
