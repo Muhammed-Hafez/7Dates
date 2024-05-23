@@ -1,0 +1,15 @@
+.button {
+  background-color: var(--main-color);
+  color: var(--light-color);
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid var(--main-color);
+  border-radius: 2rem;
+}
+.button:hover {
+  color: var(--dark-color);
+}/*# sourceMappingURL=CustomLink.module.css.map */

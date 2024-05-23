@@ -1,0 +1,68 @@
+.mobile__links {
+  position: relative;
+  z-index: 20;
+  display: block;
+  height: 100vh;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  background-color: var(--light-color);
+  padding: 5rem 2rem;
+  transition: right 0.3s ease;
+}
+.mobile__links .mobile__nav__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 1rem;
+}
+.mobile__links .mobile__nav__links .mobile__nav__link {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--dark-color);
+  margin-block: 1rem;
+  transition: color 0.2s ease;
+}
+.mobile__links .mobile__nav__links .mobile__nav__link:hover {
+  color: var(--main-color);
+}
+.mobile__links .change__lang {
+  margin-top: 2rem;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid var(--main-color);
+  padding-block: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.mobile__links .change__lang:hover {
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+.mobile__links .close__icon {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: var(--dark-color);
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .mobile__links {
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .mobile__links {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .mobile__links {
+    width: 75%;
+  }
+}/*# sourceMappingURL=MobileNav.module.css.map */

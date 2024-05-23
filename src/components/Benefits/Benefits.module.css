@@ -1,0 +1,179 @@
+.benefits {
+  position: relative;
+  background-image: url(/images/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  overflow: hidden;
+  margin-block: 4rem;
+  width: 100%;
+  border-block: 2px solid var(--main-color);
+}
+.benefits:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-dark);
+  opacity: 0.8;
+  z-index: 1;
+}
+.benefits .benefits__container {
+  position: relative;
+  z-index: 2;
+  padding: 0 3rem;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.benefits .benefits__container .benefits__content {
+  flex: 1;
+}
+.benefits .benefits__container .benefits__content .benefits__title {
+  margin-bottom: 30px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--light-color);
+  font-family: "Tajawal", sans-serif;
+}
+.benefits .benefits__container .benefits__content .benefits__desc {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--light-color);
+  font-style: italic;
+}
+.benefits .benefits__container .benefits__content .benefits__listContainer {
+  margin-bottom: 2rem;
+}
+.benefits .benefits__container .benefits__content .benefits__listContainer .benefits__list {
+  margin-bottom: 1rem;
+  row-gap: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.benefits .benefits__container .benefits__content .benefits__listContainer .benefits__list li {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--light-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.benefits .benefits__container .benefits__video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  flex: 1;
+  background-color: var(--light-color);
+}
+.benefits .benefits__container .benefits__video img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  aspect-ratio: 1/1;
+}
+@keyframes pulseAnimation {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .benefits .benefits__title {
+    font-size: 2rem;
+  }
+  .benefits .benefits__desc {
+    font-size: 1rem;
+  }
+  .benefits .benefits__list li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .benefits .benefits__container {
+    padding: 0rem;
+  }
+}
+@media (max-width: 1200px) {
+  .benefits .benefits__container {
+    padding-inline: 1rem;
+    max-width: 1000px;
+  }
+  .benefits .benefits__container .benefits__content .benefits__title {
+    font-size: 2.3rem;
+  }
+  .benefits .benefits__container .benefits__content .benefits__desc {
+    font-size: 1rem;
+  }
+  .benefits .benefits__container .benefits__content .benefits__listContainer .benefits__list li {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 992px) {
+  .benefits .benefits__container {
+    padding: 0 2rem;
+    max-width: 950px;
+    flex-direction: column-reverse;
+    padding-bottom: 1rem;
+  }
+  .benefits .benefits__container .benefits__content .benefits__title {
+    font-size: 2rem;
+  }
+  .benefits .benefits__container .benefits__content .benefits__desc {
+    font-size: 1rem;
+    width: 75%;
+  }
+  .benefits .benefits__container .benefits__content .benefits__listContainer .benefits__list {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .benefits .benefits__container {
+    max-width: 700px;
+  }
+}
+@media (max-width: 480px) {
+  .benefits .benefits__container {
+    max-width: 400px;
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+  .benefits .benefits__container .benefits__content {
+    padding-inline: 1rem;
+  }
+  .benefits .benefits__container .benefits__content .benefits__title {
+    font-size: 1.5rem;
+  }
+  .benefits .benefits__container .benefits__content .benefits__desc {
+    width: 100%;
+  }
+  .benefits .benefits__container .benefits__content .benefits__listContainer .benefits__list {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Benefits.module.css.map */

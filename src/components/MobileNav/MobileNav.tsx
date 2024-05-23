@@ -45,6 +45,11 @@ const MobileNav = ({ onClose }: MobileNavProps) => {
       name: "Contact",
       path: `${locale === "en" ? "/contact" : `/${locale}/contact`}`,
     },
+    {
+      id: "7",
+      name: "Factory",
+      path: `${locale === "en" ? "/new" : `/${locale}/new`}`,
+    },
   ];
 
   // useState to store the current language
