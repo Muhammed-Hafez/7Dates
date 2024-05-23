@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  background-image: url(/images/about/about-bg.jpg);
+  background-image: url(/images/Factory/Factory_Banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -311,12 +311,13 @@
       flex-direction: column;
       padding-inline: 1rem;
       align-items: flex-start;
-
+      gap: 1rem;
       .story__content,
       .vision__content,
       .mission__content {
         h2 {
           font-size: 1rem;
+          margin-bottom: 0.3rem;
         }
 
         p {
