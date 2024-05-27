@@ -17,7 +17,7 @@ const AboutPage = () => {
       <div className={styles.about__container}>
         <section className={styles.about__content}>
           <h1>
-            {t("Welcome to Seven Dates Factory Packing and processing Date")}
+            {t("Welcome to Seven Dates Factory Packing and processing Dates")}
             <br />
             {t(" Your State-of-the-Art Dates Factory !")}
           </h1>
