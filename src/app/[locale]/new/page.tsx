@@ -72,7 +72,7 @@ const AboutPage = () => {
           </div>
 
           <div className={styles.mission__img}>
-            <img src="/images/Factory/OurWorkers.JPG" alt="About" />
+            <img src="/images/Factory/factory.jpg" alt="About" />
           </div>
         </section>
 
