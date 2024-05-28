@@ -26,6 +26,9 @@ const AboutPage = () => {
               "At Seven Dates Factory, we pride ourselves on being at the forefront of dates production, bringing you the finest quality dates through innovation, technology, and a commitment to excellence. Our state-of-the-art dates factory is a testament to our dedication to delivering superior products to our customers worldwide."
             )}
           </p>
+          <video className={styles.FactoryVideo} controls loop>
+            <source src="/images/Factory/7Dates.mp4" />
+          </video>
         </section>
 
         <section className={styles.about__story}>
@@ -69,7 +72,7 @@ const AboutPage = () => {
           </div>
 
           <div className={styles.mission__img}>
-            <img src="/images/Factory/IMG_0720.JPG" alt="About" />
+            <img src="/images/Factory/img.JPG" alt="About" />
           </div>
         </section>
 
