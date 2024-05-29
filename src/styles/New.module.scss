@@ -199,6 +199,11 @@
   .about__container {
     max-width: 900px;
 
+    video {
+      width: 100%;
+      height: 100%;
+    }
+
     .about__story,
     .about__vision,
     .about__mission,
@@ -272,6 +277,13 @@
       p {
         font-size: 0.9rem;
       }
+
+      .video__container {
+        video {
+          width: 100%;
+          height: 400px;
+        }
+      }
     }
 
     .about__story,
@@ -305,6 +317,13 @@
 
       p {
         font-size: 0.7rem;
+      }
+
+      .video__container {
+        video {
+          width: 100%;
+          height: 200px;
+        }
       }
     }
 
