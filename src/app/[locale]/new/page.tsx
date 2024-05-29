@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 import Clients from "../../../components/Clients/Clients";
 
@@ -12,17 +12,6 @@ import styles from "../../../styles/New.module.scss";
 const AboutPage = () => {
   const { t } = useI18n();
   const videoSectionRef = useRef<HTMLDivElement>(null);
-  // const videoRef = useRef<HTMLVideoElement>(null);
-
-  // useEffect(() => {
-  //   if (videoSectionRef.current) {
-  //     videoSectionRef.current.scrollIntoView({ behavior: "smooth" });
-  //   }
-
-  //   if (videoRef.current) {
-  //     videoRef.current.play();
-  //   }
-  // }, []);
 
   return (
     <>
@@ -40,9 +29,11 @@ const AboutPage = () => {
               "At Seven Dates Factory, we pride ourselves on being at the forefront of dates production, bringing you the finest quality dates through innovation, technology, and a commitment to excellence. Our state-of-the-art dates factory is a testament to our dedication to delivering superior products to our customers worldwide."
             )}
           </p>
-          <video className={styles.FactoryVideo} controls loop autoPlay>
-            <source src="/images/Factory/7Dates.mp4" />
-          </video>
+          <div className={styles.video__container}>
+            <video controls loop autoPlay playsInline>
+              <source src="/images/Factory/7Dates.mp4" />
+            </video>
+          </div>
         </section>
 
         <section className={styles.about__story}>
