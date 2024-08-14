@@ -71,7 +71,7 @@
 }
 .about .about__container .about__content .about__title {
   font-family: "Tajawal", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.2;
   font-weight: 600;
   color: var(--dark-color);
@@ -173,6 +173,6 @@
     height: 150px;
   }
   .about .about__container .about__content .about__title {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=About.module.css.map */

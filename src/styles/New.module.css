@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  background-image: url(/images/about/about-bg.jpg);
+  background-image: url(/images/Factory/Factory_Banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@
   overflow: hidden;
 }
 .about__container .about__content h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   text-align: center;
   margin-bottom: 1rem;
   font-family: "Tajawal", sans-serif;
@@ -29,6 +29,15 @@
   font-size: 1.2rem;
   text-align: center;
   font-weight: 400;
+}
+.about__container .about__content .video__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__container .about__content .video__container video {
+  width: 70%;
+  height: 600px;
 }
 .about__container .about__story {
   display: flex;
@@ -52,16 +61,14 @@
   margin-bottom: 0.5rem;
 }
 .about__container .about__story .story__content p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .about__container .about__story .story__img {
   width: 80%;
-  height: 700px;
 }
 .about__container .about__story .story__img img {
   width: 100%;
-  height: 100%;
 }
 .about__container .about__vision {
   display: flex;
@@ -86,16 +93,14 @@
   margin-bottom: 1rem;
 }
 .about__container .about__vision .vision__content p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .about__container .about__vision .vision__img {
   width: 80%;
-  height: 700px;
 }
 .about__container .about__vision .vision__img img {
   width: 100%;
-  height: 100%;
 }
 .about__container .about__mission {
   display: flex;
@@ -119,24 +124,20 @@
   margin-bottom: 1rem;
 }
 .about__container .about__mission .mission__content p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .about__container .about__mission .mission__img {
   width: 80%;
-  height: 700px;
 }
 .about__container .about__mission .mission__img img {
   width: 100%;
-  height: 100%;
 }
 .about__container .end__img {
   width: 80%;
-  height: 700px;
 }
 .about__container .end__img img {
   width: 100%;
-  height: 100%;
 }
 .about__container .about__end {
   font-size: 1.5rem;
@@ -154,6 +155,15 @@
   .about__container .about__content h1 {
     font-size: 2rem;
   }
+  .about__container .about__content .video__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about__container .about__content .video__container video {
+    width: 75%;
+    height: 500px;
+  }
   .about__container .about__story,
   .about__container .about__vision,
   .about__container .about__mission,
@@ -164,6 +174,10 @@
 @media (max-width: 992px) {
   .about__container {
     max-width: 900px;
+  }
+  .about__container .about__content .video__container video {
+    width: 80%;
+    height: 500px;
   }
   .about__container .about__story,
   .about__container .about__vision,
@@ -223,6 +237,10 @@
   .about__container .about__content p {
     font-size: 0.9rem;
   }
+  .about__container .about__content .video__container video {
+    width: 80%;
+    height: 400px;
+  }
   .about__container .about__story,
   .about__container .about__vision,
   .about__container .about__mission {
@@ -246,10 +264,14 @@
     padding-inline: 1rem;
   }
   .about__container .about__content h1 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .about__container .about__content p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+  .about__container .about__content .video__container video {
+    width: 100%;
+    height: 200px;
   }
   .about__container .about__story,
   .about__container .about__vision,
@@ -257,6 +279,7 @@
     flex-direction: column;
     padding-inline: 1rem;
     align-items: flex-start;
+    gap: 1rem;
   }
   .about__container .about__story .story__content h2,
   .about__container .about__story .vision__content h2,
@@ -268,6 +291,7 @@
   .about__container .about__mission .vision__content h2,
   .about__container .about__mission .mission__content h2 {
     font-size: 1rem;
+    margin-bottom: 0.3rem;
   }
   .about__container .about__story .story__content p,
   .about__container .about__story .vision__content p,
@@ -291,7 +315,6 @@
   .about__container .about__mission .story__img,
   .about__container .about__mission .end__img {
     width: 100%;
-    height: 500px;
   }
   .about__container .about__story .story__img img,
   .about__container .about__story .end__img img,
@@ -308,6 +331,5 @@
   .about__container .about__mission .mission__img,
   .about__container .about__mission .vision__img {
     width: 100%;
-    height: 300px;
   }
 }/*# sourceMappingURL=New.module.css.map */
